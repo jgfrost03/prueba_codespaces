@@ -1,0 +1,25 @@
+Prueba de la ruta POST /registro
+
+Para probar la API usé Thunder Client (extensión de VS Code).
+
+Configuración de la petición:
+- Método: POST
+- URL: http://localhost:3000/registro
+- Encabezado: Content-Type: application/json
+- Body (JSON enviado):
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Respuesta recibida del servidor:
+{
+  "estado": "Datos recibidos",
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+El servidor recibió los datos correctamente gracias al middleware
+express.json(), que permite leer el cuerpo de la petición POST.
+Los datos se accedieron mediante req.body.nombre y req.body.mensaje,
+y fueron devueltos al cliente en formato JSON como confirmación.
