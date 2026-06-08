@@ -1,0 +1,21 @@
+Ejemplo de JSON para reportar una incidencia ciudadana
+
+Un ciudadano puede enviar una petición POST a:
+http://localhost:3000/incidencia
+
+Con el siguiente JSON en el cuerpo de la petición:
+
+{
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona desde hace varios días."
+}
+
+Respuesta esperada del servidor:
+{
+  "mensaje": "Incidencia registrada",
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona desde hace varios días."
+}
+
+Este formato estructurado permite que la plataforma registre
+y clasifique los reportes ciudadanos de manera organizada.
